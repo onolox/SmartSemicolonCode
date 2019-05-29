@@ -1,0 +1,4 @@
+node_modules
+.history
+tslint.json
+smartsemicolon.code-workspace

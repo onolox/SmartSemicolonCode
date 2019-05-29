@@ -1,0 +1,61 @@
+{
+	"name": "smartsemicolon",
+	"displayName": "SmartSemicolon",
+	"description": "Smart Semicolon is fun!",
+	"author": "Fabio Marmitt",
+	"version": "1.0.0",
+	"engines": {
+		"vscode": "^1.31.0"
+	},
+	"keywords": [
+		"semicolon",
+		"smart"
+	],
+	"categories": [
+		"Keymaps",
+		"Other"
+	],
+	"activationEvents": [
+		"*",
+		"onCommand:type"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.smartSemicolon",
+				"title": "Smart Semicolon"
+			},
+			{
+				"command": "extension.smartSemicolonBackspace",
+				"title": "Smart Semicolon Backspace"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "extension.smartSemicolon",
+				"key": "oem_2",
+				"when": "editorTextFocus && editorLangId =~ /javascript|csharp|typescript|java/)"
+			},
+			{
+				"command": "extension.smartSemicolonBackspace",
+				"key": "backspace",
+				"when": "editorTextFocus && editorLangId =~ /javascript|csharp|typescript|java/)"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"tslint": "^5.12.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	}
+}
