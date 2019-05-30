@@ -1,4 +1,5 @@
 node_modules
 .history
 tslint.json
-smartsemicolon.code-workspace
+*.code-workspace
+*.vsix

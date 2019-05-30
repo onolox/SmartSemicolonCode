@@ -1,9 +1,11 @@
 {
-    "name": "smartsemicolon",
-    "displayName": "SmartSemicolon",
+    "name": "smartsemicoloncode",
+    "displayName": "SmartSemicolonCode",
     "description": "Smart Semicolon is fun!",
     "author": "Fabio Marmitt",
+    "publisher": "onolox",
     "version": "1.0.0",
+    "repository": { "url": "https://github.com/onolox/SmartSemicolonCode/" },
     "engines": {
         "vscode": "^1.31.0"
     },
