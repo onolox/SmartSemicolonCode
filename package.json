@@ -1,11 +1,13 @@
 {
     "name": "smartsemicoloncode",
-    "displayName": "SmartSemicolonCode",
+    "displayName": "Smart Semicolon Code",
     "description": "Smart Semicolon is fun!",
     "author": "Fabio Marmitt",
     "publisher": "onolox",
-    "version": "1.0.0",
-    "repository": { "url": "https://github.com/onolox/SmartSemicolonCode/" },
+    "version": "1.1.0",
+    "repository": {
+        "url": "https://github.com/onolox/SmartSemicolonCode/"
+    },
     "engines": {
         "vscode": "^1.31.0"
     },
@@ -35,17 +37,17 @@
         "keybindings": [{
                 "command": "extension.smartSemicolon",
                 "key": ";",
-                "when": "editorTextFocus && editorLangId =~ /javascript|csharp|typescript|java/)"
+                "when": "editorTextFocus && editorLangId =~ /javascript|csharp|typescript|java|dart/)"
             },
             {
                 "command": "extension.smartSemicolon",
                 "key": "oem_2",
-                "when": "editorTextFocus && editorLangId =~ /javascript|csharp|typescript|java/)"
+                "when": "editorTextFocus && editorLangId =~ /javascript|csharp|typescript|java|dart/)"
             },
             {
                 "command": "extension.smartSemicolonBackspace",
                 "key": "backspace",
-                "when": "editorTextFocus && editorLangId =~ /javascript|csharp|typescript|java/)"
+                "when": "editorTextFocus && editorLangId =~ /javascript|csharp|typescript|java|dart/)"
             }
         ]
     },
