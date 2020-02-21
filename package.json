@@ -37,17 +37,17 @@
         "keybindings": [{
                 "command": "extension.smartSemicolon",
                 "key": ";",
-                "when": "editorTextFocus && editorLangId =~ /javascript|csharp|typescript|java|dart/)"
+                "when": "editorTextFocus && editorLangId =~ /javascript|csharp|typescript|java|dart|cpp|c/)"
             },
             {
                 "command": "extension.smartSemicolon",
                 "key": "oem_2",
-                "when": "editorTextFocus && editorLangId =~ /javascript|csharp|typescript|java|dart/)"
+                "when": "editorTextFocus && editorLangId =~ /javascript|csharp|typescript|java|dart|cpp|c/)"
             },
             {
                 "command": "extension.smartSemicolonBackspace",
                 "key": "backspace",
-                "when": "editorTextFocus && editorLangId =~ /javascript|csharp|typescript|java|dart/)"
+                "when": "editorTextFocus && editorLangId =~ /javascript|csharp|typescript|java|dart|cpp|c/)"
             }
         ]
     },
