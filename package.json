@@ -4,7 +4,7 @@
     "description": "Smart Semicolon is fun!",
     "author": "Fabio Marmitt",
     "publisher": "onolox",
-    "version": "1.2.0",
+    "version": "1.3.0",
     "repository": {
         "url": "https://github.com/onolox/SmartSemicolonCode/"
     },
@@ -20,12 +20,12 @@
         "Other"
     ],
     "activationEvents": [
-        "*",
-        "onCommand:type"
+        "onStartupFinished"
     ],
     "main": "./out/extension.js",
     "contributes": {
-        "commands": [{
+        "commands": [
+            {
                 "command": "extension.smartSemicolon",
                 "title": "Smart Semicolon"
             },
@@ -34,7 +34,8 @@
                 "title": "Smart Semicolon Backspace"
             }
         ],
-        "keybindings": [{
+        "keybindings": [
+            {
                 "command": "extension.smartSemicolon",
                 "key": ";",
                 "when": "editorTextFocus && editorLangId =~ /javascript|csharp|typescript|java|dart|cpp|c/)"
