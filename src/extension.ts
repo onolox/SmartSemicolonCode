@@ -1,7 +1,6 @@
 import * as vscode from 'vscode';
 
 export function activate(context: vscode.ExtensionContext) {
-	console.log('"smartsemicolon" is now active!');
 	let posicaoOriginal: vscode.Position;
 	let inserido: boolean = false;
 
